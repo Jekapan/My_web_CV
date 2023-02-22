@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    color:#757575 ;
+}
+body,h1,h2,h3,h4,h5,h6 {
+    background: black;
+    color: white;
+}
+/*___________________ NAVIGATION___________________ */
+nav {
+    display: none;
+    background: #222;
+    text-align: center;
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+nav a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: black;
+}
+nav i, nav p {
+    color: white;
+}
+
+/*___________________CONTENT BLOCK___________________*/
+main {
+   
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+
+}
+
+.item{
+    padding: 10px;
+}
+
+header {
+    text-align: center;
+}
+header p {
+    color: white;
+}
+
+#about p{
+    text-align: justify;
+}
+
+.item{
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*___________________FOOTER___________________*/
+footer form {
+    padding: 10px 0;
+}
+
+.footer {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding: 8px;
+}
+
+.button-footer {
+    color: #000!important;
+    background-color: #f1f1f1!important;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: center;
+
+}
+
