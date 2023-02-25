@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  color: #757575;
+}
+body,h1,h2,h3,h4,h5,h6 {
+  background: #000;
+  color: #fff;
+  font-family: "Monsterrat", sans-serif;
+}
+/*___________________ NAVIGATION___________________ */
+nav {
+  background: #222;
+  text-align: center;
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+  top: 0;
+  left: 0;
+}
+nav a {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #000;
+}
+nav i, nav p {
+  color: #fff;
+}
+nav > img {
+    width: 100%;
+}
+/*___________________CONTENT BLOCK___________________*/
+main {
+  margin-left: 150px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.item {
+  padding: 30px 10px;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  text-align: center;
+}
+header p {
+  color: #fff;
+}
+header > img {
+    width: 75%;
+}
+/* ____________________LEVEL OF MY SKILS________________ */
+.gaming {
+    height: 28px; 
+    width: 95%;
+}
+.web-design {
+    height: 28px; 
+    width: 50%;
+}
+.photoshop {
+    height: 28px; 
+    width: 25%;
+}
+.python {
+    height: 28px;
+    width: 73%;
+}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.polaroid {
+  background-color: #000;
+  margin: 10px;
+  flex: 30%;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.1);
+  text-align: center;
+  flex-shrink: 0;
+}
+.polaroid p {
+    color: #f1f1f1;
+  }
+.polaroid > img {
+    width: 100%;
+}
+.polaroid:active {
+  transform: translateY(4px);
+}
+.polaroid:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 131, 253, 0.2),
+    0 6px 20px 0 rgba(0, 131, 253, 0.2);
+  cursor: pointer;
+}
+/*___________________CONTACT___________________*/
+.email {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  padding: 8px;
+}
+.contact-info i {
+  color: #fff;
+  margin-right: 16px;
+  font-size: 36px;
+}
+.button-email {
+  color: #000;
+  background-color: #ccc;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: center;
+}
+/*____________________FOR MOBILE___________________*/
+@media screen and (max-width: 600px) {
+    main {
+        margin-left: 0;
+        padding-top: 110px;
+    }
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sidebar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background: #222;
+        width: 100%;
+        height: auto;
+        position: fixed;
+        z-index: 1;
+       /*  top: 0;
+        left: 0; */
+    }
+    .sidebar a {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: none;
+        border-right: 1px solid #fff;
+        text-decoration: none;
+    }
+    .sidebar a:last-child {
+        border-right: none;
+    }
+    .sidebar > img {
+        display: none;
+    }
+}
