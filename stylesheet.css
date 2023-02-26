@@ -2,14 +2,20 @@
   box-sizing: border-box;
   color: #757575;
 }
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray: #222;
+}
+
 body,h1,h2,h3,h4,h5,h6 {
-  background: #000;
-  color: #fff;
+  background: var(--black);
+  color: var(--white);
   font-family: "Monsterrat", sans-serif;
 }
 /*___________________ NAVIGATION___________________ */
 nav {
-  background: #222;
+  background: var(--gray);
   text-align: center;
   height: 100%;
   width: 150px;
@@ -22,14 +28,14 @@ nav {
 nav a {
   display: block;
   padding: 10px 0;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid var(--white);
   text-decoration: none;
 }
 nav a:hover {
-  background-color: #000;
+  background-color: var(--black);
 }
 nav i, nav p {
-  color: #fff;
+  color: var(--white);
 }
 nav > img {
     width: 100%;
@@ -52,7 +58,7 @@ header {
   text-align: center;
 }
 header p {
-  color: #fff;
+  color: var(--white);
 }
 header > img {
     width: 75%;
@@ -89,7 +95,7 @@ header > img {
   flex-shrink: 0;
 }
 .polaroid p {
-    color: #f1f1f1;
+    color: var(--white);
   }
 .polaroid > img {
     width: 100%;
@@ -107,18 +113,18 @@ header > img {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--white);
   width: 100%;
   padding: 8px;
 }
 .contact-info i {
-  color: #fff;
+  color: var(--white);
   margin-right: 16px;
   font-size: 36px;
 }
 .button-email {
-  color: #000;
-  background-color: #ccc;
+  color: var(--black);
+  background-color: var(--white);
   padding: 12px;
   text-align: center;
   cursor: pointer;
@@ -137,20 +143,18 @@ header > img {
     .sidebar {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        background: #222;
         width: 100%;
         height: auto;
         position: fixed;
         z-index: 1;
-       /*  top: 0;
-        left: 0; */
+       
     }
     .sidebar a {
         display: block;
         text-align: center;
         padding: 10px 0;
         border-bottom: none;
-        border-right: 1px solid #fff;
+        border-right: 1px solid var(--white);
         text-decoration: none;
     }
     .sidebar a:last-child {
